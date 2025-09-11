@@ -1,0 +1,1 @@
+// chapter6 printf와 scanf 함수에 관한 내용
