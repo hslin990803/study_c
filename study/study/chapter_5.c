@@ -1,4 +1,4 @@
-// P.105 ~
+// P.105 ~ 상수와 기본 자료형
 
 // P.109 SizeOfOperator.c
 //#include <stdio.h>

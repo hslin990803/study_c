@@ -1,4 +1,4 @@
-// P.49 ~
+// P.49 ~ 변수와 연산자
 
 // P.50 SimpleAddOne.c
 //#include <stdio.h>

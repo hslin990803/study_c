@@ -1,4 +1,4 @@
-// P.34 ~ 
+// P.34 ~ 이것이 C언어다. / P.33 ~ 프로그램의 기본 구성
 //#include <stdio.h> 
 //int main() {
 //	printf("Hello world!!");
