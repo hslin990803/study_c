@@ -49,7 +49,7 @@
       <Filter>소스 파일\part_1</Filter>
     </ClCompile>
     <ClCompile Include="chapter_10.c">
-      <Filter>소스 파일\part_2</Filter>
+      <Filter>소스 파일\part_1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
