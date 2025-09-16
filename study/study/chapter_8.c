@@ -268,6 +268,39 @@
 * 이렇게 어수선한 문제를 제시하는 이유는 continue와 break문의 사용법을 익히기 위해서다.
 * 그러니 가급적이면 continue와 break문을 사용해서 이 문제를 해결하기 바란다.
 */
+//#include <stdio.h> // 내가 푼 것 (continue와 break 미사용)
+//int main(void) {
+//	int i, j;
+//
+//	for (i = 1; i < 10; i++) {
+//		if (i % 2 == 0) {
+//			for (j = 1; j <= i; j++) {
+//				printf("%d X %d = %d \n", i, j, i * j);
+//			}
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+// 정답
+//#include <stdio.h>
+//int main(void) {
+//	int i, j;
+//	for (i = 1; i < 10; i++) {
+//		if (i % 2 != 0)
+//			continue;
+//
+//		for (j = 1; j < 10; j++) {
+//			if (i < j)
+//				break;
+//			printf("%d X %d = %d \n", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
 
 /*
 * 문제 2
@@ -278,3 +311,145 @@
 *   9 9
 * 참고로, 가능한 모든 수의 조합을 시도하기 위해서는 반복문을 중첩시켜야 한다.
 */
+//#include <stdio.h> // 내가 푼 것 (continue와 break 미사용)
+//int main(void) {
+//	int a, z;
+//
+//	for (a = 0; a < 10; a++) {
+//		for (z = 0; z < 10; z++) {
+//			if ((a * 10 + z) + (z * 10 + a) == 99) {
+//				printf("%d %d + %d %d = %d \n", a, z, z, a, (a * 10 + z) + (z * 10 + a));
+//			}
+//		}
+//	}
+//
+//	return 0;
+//}
+
+// 정답
+//#include <stdio.h>
+//int main(void) {
+//	int A, Z;
+//	int result;
+//	for (A = 0; A < 10; A++) {
+//		for (Z = 0; Z < 10; Z++) {
+//			if (A == Z)
+//				continue;
+//			result = (A * 10 + Z) + (Z * 10 + A);
+//			if (result == 99)
+//				printf("%d%d+%d%d=%d\n", A, Z, Z, A, result);
+//		}
+//	}
+//	return 0;
+//}
+
+// P.194 EnglishSchool.c
+//#include <stdio.h>
+//int main(void) {
+//	int num;
+//	printf("1이상 5이하의 정수 입력 : ");
+//	scanf("%d", &num);
+//
+//	switch (num) {
+//	case 1:
+//		printf("1은 ONE \n");
+//		break;
+//	case 2:
+//		printf("2는 TWO \n");
+//		break;
+//	case 3:
+//		printf("3은 THREE \n");
+//		break;
+//	case 4:
+//		printf("4는 FOUR \n");
+//		break;
+//	case 5:
+//		printf("5는 FIVE \n");
+//		break;
+//	default :
+//		printf("I don't know! \n");
+//	}
+//	return 0;
+//}
+
+// P.197 AdvanEnglishSchool.c
+//#include <stdio.h>
+//int main(void) {
+//	char sel;
+//	printf("M 오전, A 오후, E 저녁 \n");
+//	printf("입력 : ");
+//	scanf("%c", &sel);
+//
+//	switch (sel) {
+//	case 'M':
+//	case 'm':
+//		printf("Morning \n");
+//		break;
+//	case 'A':
+//	case 'a':
+//		printf("Afternoon \n");
+//		break;
+//	case 'E':
+//	case 'e':
+//		printf("Evening \n");
+//		break; // 사실 불필요한 break문!
+//	}
+//	return 0;
+//}
+
+/*
+* P.200 문제 08-3 [switch문으로 대신하기]
+* 그림 08-10의 if...else if...else는 변수 n에 저장된 값의 범위를 출력하도록 구성되어 있다.
+* 필자는 이것을 예로 해서 switch문이 모든 if...else if...else를 대신하기에는 무리가 있음을 설명하였지만,
+* 그림 08-10의 if...else if...else는 약간의 조작(?)을 통해서 wtich문으로 변경이 가능하다.
+* 따라서 이를 switch문으로 변경해서 실행해보기 바란다.
+*/
+//#include <stdio.h>
+//int main(void) {
+//	int num;
+//	
+//	printf("정수 입력 : ");
+//	scanf("%d", &num);
+//
+//	switch (num / 10) {
+//	case 0:
+//		printf("0이상 10미만");
+//		break;
+//	case 1:
+//		printf("10이상 20미만");
+//		break;
+//	case 2:
+//		printf("20이상 30미만");
+//		break;
+//	default:
+//		printf("30이상");
+//	}
+//	return 0;
+//}
+
+// P.201 GoToBasic.c
+//#include <stdio.h>
+//int main(void) {
+//	int num;
+//	printf("자연수 입력 : ");
+//	scanf("%d", &num);
+//
+//	if (num == 1)
+//		goto ONE;
+//	else if (num == 2)
+//		goto TWO;
+//	else
+//		goto OTHER;
+//
+//ONE:
+//	printf("1을 입력하셨습니다! \n");
+//	goto END;
+//TWO : 
+//	printf("2를 입력하셨습니다! \n");
+//	goto END;
+//OTHER :
+//	printf("3 혹은 다른 값을 입력하셨군요! \n");
+//
+//END : 
+//	return 0;
+//}
