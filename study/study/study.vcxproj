@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="chapter_10.c" />
     <ClCompile Include="chapter_11.c" />
+    <ClCompile Include="chapter_12.c" />
     <ClCompile Include="chapter_1_2.c" />
     <ClCompile Include="chapter_3.c" />
     <ClCompile Include="chapter_4.c" />
