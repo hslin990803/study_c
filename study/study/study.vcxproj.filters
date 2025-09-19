@@ -57,5 +57,8 @@
     <ClCompile Include="chapter_12.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="chapter_13.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
