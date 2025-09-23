@@ -258,3 +258,167 @@
 //
 //	return 0;		// main의 num이 유효한 마지막 문장
 //}
+
+// P.226 AnotherLocalVal.c
+//#include <stdio.h>
+//int main(void) {
+//	int cnt;
+//	for (cnt = 0; cnt < 3; cnt++) {
+//		int num = 0;
+//		num++;
+//		printf("%d번째 반복, 지역번수 num은 %d. \n", cnt + 1, num);
+//	}
+//
+//	if (cnt == 3) {
+//		int num = 7;
+//		num++;
+//		printf("if문 내에 존재하는 지역변수 num은 %d. \n", num);
+//	}
+//
+//	return 0;
+//}
+
+// P.228 LocalValHideVal.c
+//#include <stdio.h>
+//int main(void) {
+//	int num = 1;
+//
+//	if (num == 1) {
+//		int num = 7;		// 이 행을 주석처리 하고 실행결과 확인하자!
+//		num += 10;
+//		printf("if문 내 지역변수 num : %d \n", num);
+//	}
+//	printf("main 함수 내 지역변수 num: %d \n", num);
+//
+//	return 0;
+//}
+
+// P.230 GlobalVariable.c
+//#include <stdio.h>
+//void Add(int val);
+//int num;		// 전역변수는 기본 0으로 초기화됨
+//
+//int main(void) {
+//	printf("num : %d \n", num);
+//	Add(3);
+//	printf("num : %d \n", num);
+//	num++;		// 전역변수 num의 값 1 증가
+//	printf("num : %d \n", num);
+//
+//	return 0;
+//}
+//
+//void Add(int val) {
+//	num += val;		//  전역변수 num의 값 val 만큼 증가
+//}
+
+// P.231 LocalValHideGlobalVal.c
+//#include <stdio.h>
+//int Add(int val);
+//int num = 1;
+//
+//int main(void) {
+//	int num = 5;
+//	printf("num : %d \n", Add(3));
+//	printf("num : %d \n", num + 9);
+//
+//	return 0;
+//}
+//
+//int Add(int val) {
+//	int num = 9;
+//	num += val;
+//
+//	return num;
+//}
+
+// P.234 StaticLocalVariable.c
+//#include <stdio.h>
+//void SimpleFunc(void) {
+//	static int num1 = 0;		// 초기화하지 않으면 0 초기화
+//	int num2 = 0;		// 초기화하지 않으면 쓰레기 값 초기화
+//	num1++, num2++;
+//	printf("static : %d, local : %d \n", num1, num2);
+//}
+//
+//int main(void) {
+//	int i;
+//	for (i = 0; i < 3; i++)
+//		SimpleFunc();
+//	return 0;
+//}
+
+/*
+* P.237 문제 09-2 [static 변수의 활용]
+* 다음은 프로그램 사용자가 입력하는 값을 누적하여 그 합계를 출력하는 예제이다.
+* #include <stdio.h>
+* int total = 0;
+* 
+* int AddToTotal(int num) {
+*	total += num;
+*	return total;
+* }
+* int main(void) {
+*	int num, i;
+*	for (i = 0; i < 3; i++) {
+*		printf("입력%d : ", i + 1);
+*		scanf("%d", &num);
+*		printf("누적 : %d \n", AddToTotal(num));
+*	}
+*	return 0;
+* }
+* 위의 예제에서는 함수 AddToTotal에서의 사용을 목적으로 전역변수 total을 선언하였는데,
+* 이를 static 변수로 대체해보자.
+* 단 static 변수로의 대체과정에서 main 함수의 변경은 없어야 하며 실행결과도 동일해야 한다.
+*/
+
+//#include <stdio.h>
+//int AddToTotal(int num) {
+//	static total = 0;
+//	total += num;
+//	return total;
+//}
+//int main(void) {
+//	int num, i;
+//	for (i = 0; i < 3; i++) {
+//		printf("입력%d : ", i + 1);
+//		scanf("%d", &num);
+//		printf("누적 : %d \n", AddToTotal(num));
+//	}
+//
+//	return 0;
+//}
+
+// P.240 RecursiveFunc.c
+//#include <stdio.h>
+//void Recursive(int num) {
+//	if (num <= 0)	// 재귀의 탈출 조건
+//		return;		// 재귀의 탈출!
+//	printf("Recursive call! %d \n", num);
+//	Recursive(num - 1);
+//}
+//
+//int main(void) {
+//	Recursive(3);
+//	
+//	return 0;
+//}
+
+// P.243 RecursiveFactorial.c
+//#include <stdio.h>
+//int Factorial(int n) {
+//	if (n == 0)
+//		return 1;
+//	else
+//		return n * Factorial(n - 1);
+//}
+//
+//int main(void) {
+//	printf("1! = %d \n", Factorial(1));
+//	printf("2! = %d \n", Factorial(2));
+//	printf("3! = %d \n", Factorial(3));
+//	printf("4! = %d \n", Factorial(4));
+//	printf("9! = %d \n", Factorial(9));
+//
+//	return 0;
+//}
