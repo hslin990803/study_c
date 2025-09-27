@@ -52,25 +52,25 @@
       <Filter>소스 파일\part_1</Filter>
     </ClCompile>
     <ClCompile Include="chapter_11.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_12.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_13.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_14.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_15.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_16.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_17.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
