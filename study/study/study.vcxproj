@@ -138,6 +138,7 @@
     <ClCompile Include="chapter_21.c" />
     <ClCompile Include="chapter_22.c" />
     <ClCompile Include="chapter_23.c" />
+    <ClCompile Include="chapter_24.c" />
     <ClCompile Include="chapter_3.c" />
     <ClCompile Include="chapter_4.c" />
     <ClCompile Include="chapter_5.c" />
