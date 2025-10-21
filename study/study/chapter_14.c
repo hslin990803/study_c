@@ -104,14 +104,56 @@
 * SquareByReference 함수는 정수가 저장되어 있는 변수의 주소 값을 인자로 받아서
 * 해당 변수에 저장된 값의 제곱을 그 변수에 다시 저장해야 한다.
 */
+//#include <stdio.h>
+//int SquareByValue(int num) {
+//	return num * num;
+//}
+//void SquareByReference(int* ptr) {
+//	int num = *ptr;
+//
+//	*ptr = num * num;
+//}
+//
+//int main(void) {
+//	int num;	
+//
+//	printf("정수 입력 : ");
+//	scanf("%d", &num);
+//
+//	printf("%d \n", SquareByValue(num));
+//	SquareByReference(&num);
+//
+//	printf("%d \n", num);
+//
+//	return 0;
+//}
 
 /*
 * 문제 2
 * 세 변수에 저장된 값을 서로 뒤바꾸는 함수를 정의해보자.
-* 예를 들어서 함수의 이름이 Swap 3라하면, 다음의 형태로 함수가 호출되어야 한다.
+* 예를 들어서 함수의 이름이 Swap3라하면, 다음의 형태로 함수가 호출되어야 한다.
 * Swap3(&num, &num2, &num3);
 * 그리고 함수호출의 결과로 num1에 저장된 값은 num2에, num2에 저장된 값은 num3에, 그리고 num3에 저장된 값은 num1에 저장되어야 한다.
 */
+//#include <stdio.h>
+//void Swap3(int* ptr1, int* ptr2, int* ptr3) {
+//	int temp = *ptr3;
+//	*ptr3 = *ptr2;
+//	*ptr2 = *ptr1;
+//	*ptr1 = temp;
+//}
+//
+//int main(void) {
+//	int num1 = 10, num2 = 20, num3 = 30;
+//
+//	printf("스왑 전 : %d %d %d \n", num1, num2, num3);
+//
+//	Swap3(&num1, &num2, &num3);
+//
+//	printf("스왑 후 : %d %d %d \n", num1, num2, num3);
+//
+//	return 0;
+//}
 
 /*
 * 문제 14-2 [const 선언에 대한 추가적인 이해]
@@ -134,6 +176,20 @@
 */
 
 /*
+* 내 답변 
+* arr의 주소값의 변경을 막기 위해
+*/
+
+/*
+* 모범 답안
+* 문제에서 정의한 함수의 기능은 인자로 전달된 배열의 전체요소를 출력하는 것이다.
+* 따라서 프로그래머가 실수로라도 배열요소의 값을 바꾸는 일은 없어야 한다.
+* 그래서 매개변수 arr에 const 선언을 추가한 것이다.
+* 이제 프로그래머가 실수로 배열요소의 값을 바꾸는 코드를 작성할 경우 컴파일 에러가 발생할 것이다.
+* 따라서 프로그래머는 자신의 실수를 인식하고 적절히 코드를 수정할 기회를 얻을 수 있게 되었다.
+*/
+
+/*
 * 문제 2
 * 아래의 예제는 한 가지 지적할만한 사항을 지니고 있다.
 * 그것이 무엇인지 이야기해 보자.
@@ -153,4 +209,30 @@
 *	ShowData(ptr);
 *	return 0;
 * }
+*/
+
+/*
+* 내 답변
+* num의 주소값을 여러번 선언하여 코드 가독성이 좋지않아보임
+*/
+
+/*
+* 모범 답안
+* 문제에서 제시한 다음 함수를 관찰하자.
+* 
+* void ShowData(const int * ptr)
+* {
+*		int * rptr = ptr;
+*		printf("%d \n", *rptr);
+*		*rptr=20;
+* }
+* 매개변수 ptr에 const선언이 추가되어있다.
+* 이는 함수 ShowData 내에서 ptr을 통해 ptr이 가리키는 변수에 저장된 값을 변경시키지 않겠다는 의도가 포함된 선언이다.
+* 그런데 다음 행에서 다음과 같이 ptr에 저장된 값을 const로 선언되지 않은 포인터 변수에 대입하고 있다.
+* 
+*	int * rptr = ptr;	// 이 문장에서 경고 메시지가 발생한다.
+* 
+* 결과적으로 rptr을 이용해서 ptr이 가리키는 변수에 저장된 값을 변경할 수 있는 상황이 되어버렸다.
+* 따라서 ptr에 const 선언을 추가한 것이 의미 없는 상황이 되어버렸다.
+* 이렇듯 const 선언을 무의미하게 만드는 문장을 삽입하는 것은 잘못된 일이다.
 */
