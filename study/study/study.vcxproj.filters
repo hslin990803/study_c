@@ -19,8 +19,11 @@
     <Filter Include="소스 파일\part_2">
       <UniqueIdentifier>{3fba99d7-7864-4669-8f8e-e8f31a6af9d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\challenge">
-      <UniqueIdentifier>{7cf7fbd0-4c63-48da-904e-ad31f0367bc4}</UniqueIdentifier>
+    <Filter Include="소스 파일\part_3">
+      <UniqueIdentifier>{bedad034-4c65-44b2-b2b5-dcf846c82a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\part_4">
+      <UniqueIdentifier>{41cb697d-d973-404b-b9c3-c508135a51a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -67,43 +70,43 @@
       <Filter>소스 파일\part_2</Filter>
     </ClCompile>
     <ClCompile Include="chapter_16.c">
-      <Filter>소스 파일\part_2</Filter>
+      <Filter>소스 파일\part_3</Filter>
     </ClCompile>
     <ClCompile Include="chapter_17.c">
-      <Filter>소스 파일\part_2</Filter>
+      <Filter>소스 파일\part_3</Filter>
     </ClCompile>
     <ClCompile Include="chapter_18.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_3</Filter>
     </ClCompile>
     <ClCompile Include="chapter_19.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_3</Filter>
     </ClCompile>
     <ClCompile Include="chapter_20.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_3</Filter>
     </ClCompile>
     <ClCompile Include="chapter_21.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_22.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_23.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_24.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_25.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_26.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_27.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="chapter_28.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

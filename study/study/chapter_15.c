@@ -22,6 +22,41 @@
 * 홀수 출력 : 1, 3, 5, 7, 9
 * 짝수 출력 : 2, 4, 6, 8, 0
 */
+//#include <stdio.h>
+//void PrintOdd(int *arr) {
+//	printf("홀수 출력 : ");
+//	for (int i = 0; i < 10; i++) {
+//		if (arr[i] % 2 != 0) {
+//			printf("%d ", arr[i]);
+//		}
+//	}
+//}
+//
+//void PrintEven(int* arr) {
+//	printf("짝수 출력 : ");
+//	for (int i = 0; i < 10; i++) {
+//		if (arr[i] % 2 == 0) {
+//			printf("%d ", arr[i]);
+//		}
+//	}
+//}
+//
+//int main(void) {
+//	int arr[10];
+//
+//	printf("총 10개의 숫자 입력\n");
+//	for (int i = 0; i < 10; i++) {
+//		printf("입력: ");
+//		scanf("%d", &arr[i]);
+//	}
+//
+//	PrintOdd(&arr);
+//	printf("\n");
+//	PrintEven(&arr);
+//	printf("\n");
+//
+//	return 0;
+//}
 
 /*
 * 도전2
@@ -35,6 +70,25 @@
 * 10진수를 2진수로 변환하는 방법을 모른다면, 먼저 그 방법부터 공부해야 한다.
 * 그런데 대부분의 경우 변환 방법을 모르는 것이 아니라, 중학교 시절에 공부한 내용이라서 잘 기억이 나지 않는 것이다.
 */
+//#include <stdio.h>
+//void BinaryNumber(int num) {
+//	if (num < 2)
+//		printf("%d", num);
+//	else {
+//		BinaryNumber(num / 2);
+//		printf("%d", num % 2);
+//	}
+//}
+//int main(void) {
+//	int num;
+//
+//	printf("10진수 정수 입력 : ");
+//	scanf("%d", &num);
+//
+//	BinaryNumber(num);
+//
+//	return 0;
+//}
 
 /*
 * 도전3
@@ -57,12 +111,38 @@
 * 입력: 2
 * 배열 요소의 출력 : 1 1 3 3 2 2 4 4 4 4
 */
+//#include <stdio.h>
+//int main(void) {
+//	int arr[10];
+//	int num;
+//	int front = 0;     // 앞쪽 인덱스
+//	int rear = 9;      // 뒤쪽 인덱스
+//
+//	printf("총 10개의 숫자 입력 \n");
+//	for (int i = 0; i < 10; i++) {
+//		printf("입력: ");
+//		scanf("%d", &num);
+//
+//		if (num % 2 != 0) {        // 홀수면 앞에서부터 채우기
+//			arr[front++] = num;
+//		}
+//		else {                   // 짝수면 뒤에서부터 채우기
+//			arr[rear--] = num;
+//		}
+//	}
+//
+//	printf("배열 요소의 출력 : ");
+//	for (int i = 0; i < 10; i++)
+//		printf("%d ", arr[i]);
+//
+//	return 0;
+//}
 
 /*
 * 도전4
-* 회문(Palindrome)은 앞르오 읽으나 뒤로 읽으나 차이가 없는 단어들을 뜻한다.
+* 회문(Palindrome)은 앞으로 읽으나 뒤로 읽으나 차이가 없는 단어들을 뜻한다.
 * 예를 들어서 level, bob과 같은 단어들은 회문에 속한다.
-* 이에 우리는 이낮로 전달되는 영단어가 회문인지 아닌지를 판단해서 그 결과를 출력하는 기능의 함수를 정의하고
+* 이에 우리는 인자로 전달되는 영단어가 회문인지 아닌지를 판단해서 그 결과를 출력하는 기능의 함수를 정의하고
 * 이에 적절한 main 함수를 정의해보고자 한다.
 * 단 구현의 편의를 위해서 대소문자까지 일치해야 회문으로 인정하기로 하겠다.
 * (이는 어디까지나 구현의 편의를 고려한 제약사항일 뿐이다).
@@ -78,6 +158,33 @@
 * 헤더파일 string.h에 선언되어 있는 strlen이란 이름의 함수이다.
 * 이 함수에 대해서는 Chapter 21에서 소개한다.
 */
+//#include <stdio.h>
+//#include <string.h>
+//int main(void) {
+//	char str[100];
+//	int length = 0;
+//	int i = 0; 
+//	int isPalindrome = 1;	// 참이라고 가정하고 시작
+//
+//	printf("문자열 입력 : ");
+//	scanf("%s", str);
+//
+//	length = strlen(str);
+//	
+//	for (i = 0; i < length / 2; i++) {
+//		if (str[i] != str[length - 1 - i]) {
+//			isPalindrome = 0;
+//			break;
+//		}
+//	}
+//
+//	if (isPalindrome)
+//		printf("화문 입니다. \n");
+//	else
+//		printf("화문이 아닙니다. \n");
+//
+//	return 0;
+//}
 
 /*
 * 도전5 (문제가 많이 길고, 그림과 코드까지 참고해야하므로 책 참고바람)
@@ -168,3 +275,38 @@
 * 입력: 7
 * 7 6 5 4 3 2 1
 */
+//#include <stdio.h>
+//void DesSort(int ary[], int len);
+//int main(void) {
+//	int arr[7];
+//	int i;
+//
+//	for (i = 0; i < 7; i++) {
+//		printf("입력: ");
+//		scanf("%d", &arr[i]);
+//	}
+//
+//	DesSort(arr, sizeof(arr) / sizeof(int));
+//
+//	for (i = 0; i < 7; i++)
+//		printf("%d ", arr[i]);
+//
+//	printf("\n");
+//
+//	return 0;
+//}
+//
+//void DesSort(int ary[], int len) {
+//	int i, j;
+//	int temp;
+//
+//	for (i = 0; i < len - 1; i++) {		// 내림차순 정렬
+//		for (j = 0; j < (len - i) - 1; j++) {
+//			if (ary[j] < ary[j + 1]) {
+//				temp = ary[j];
+//				ary[j] = ary[j + 1];
+//				ary[j + 1] = temp;
+//			}
+//		}
+//	}
+//}
