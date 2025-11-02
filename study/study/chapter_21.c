@@ -35,3 +35,22 @@
 * 단, 문자의 입출력에는 getchar 함수와 putchar 함수를 사용하기로 하자.
 * 그리고 프로그램 사용자가 알파벳 이외의 문자를 입력하는 경우에는 그에 따른 오류 메시지를 간단히 출력하기로 하자.
 */
+
+// P.424 WriteString.c
+//#include <stdio.h>
+//int main(void)
+//{
+//	char* str = "Simple String";
+//
+//	printf("1. puts test ------- \n");
+//	puts(str);
+//	puts("So Simple String");
+//
+//	printf("2. fputs test ---- \n");
+//	fputs(str, stdout); printf("\n");
+//	fputs("So Simple String", stdout); printf("\n");
+//
+//	printf("3. end of main ----\n");
+//
+//	return 0;
+//}
