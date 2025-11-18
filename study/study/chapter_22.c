@@ -141,3 +141,28 @@
 * 그리고 세 명의 정보를 프로그램 사용자로부터 입력 받아서 배열에 저장한 다음, 
 * 배열의 저장된 데이터를 순서대로 출력하는 예제를 작성해보자.
 */
+
+// P.464 StructPointer.c
+//#include <stdio.h>
+//
+//struct point {
+//	int xpos;
+//	int ypos;
+//};
+//
+//int main(void) {
+//	struct point pos1 = { 1,2 };
+//	struct point pos2 = { 100,200 };
+//	struct point* pptr = &pos1;
+//
+//	(*pptr).xpos += 4;
+//	(*pptr).ypos += 5;
+//	printf("[%d, %d] \n", pptr->xpos, pptr->ypos);
+//
+//	pptr = &pos2;
+//	pptr->xpos += 1;
+//	pptr->ypos += 2;
+//	printf("[%d, %d] \n", (*pptr).xpos, (*pptr).ypos);
+//
+//	return 0;
+//}
