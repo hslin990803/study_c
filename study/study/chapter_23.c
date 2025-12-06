@@ -282,3 +282,30 @@
 * 단, 좌표평면상에서 직사각형을 표현하기 위해서 필요한 점의 갯수는 4개가 아닌 2개이니,
 * 직사각형을 의미하는 Rectangle 변수 내에는 두 점의 정보만 존재해야 한다.
 */
+
+// P.489 UnionMemAlloc.c
+//#include <stdio.h>
+//
+//typedef struct sbox		// 구조체 sbox의 정의
+//{
+//	int mem1;
+//	int mem2;
+//	double mem3;
+//} SBox;
+//
+//typedef union ubox		// 공용체 ubox의 정의
+//{
+//	int mem1;
+//	int mem2;
+//	double mem3;
+//}UBox;
+//
+//int main(void) {
+//	SBox sbx;
+//	UBox ubx;
+//	printf("%p %p %p \n", &sbx.mem1, &sbx.mem2, &sbx.mem3);
+//	printf("%p %p %p \n", &ubx.mem1, &ubx.mem2, &ubx.mem3);
+//	printf("%d %d \n", sizeof(SBox), sizeof(UBox));
+//
+//	return 0;
+//}
