@@ -196,3 +196,25 @@
 * 문제 3
 * 문제 1과 2에서 생성한 파일에 저장된 정보 전체를 출력하는 프로그램을 작성하자.
 */
+
+// P.523 ComplexFileWrite.c
+//#include <stdio.h>
+//
+//int main(void) {
+//	char name[10];
+//	char sex;
+//	int age;
+//
+//	FILE* fp = fopen("friend.txt", "wt");
+//	int i;
+//
+//	for (i = 0; i < 3; i++) {
+//		printf("이름 성별 나이 순 입력 : ");
+//		scanf("%s %c %d", name, &sex, &age);
+//		getchar();	// 버퍼에 남아있는 \n 소멸을 위해서
+//		fprintf(fp, "%s %c %d", name, sex, age);
+//	}
+//	fclose(fp);
+//
+//	return 0;
+//}
