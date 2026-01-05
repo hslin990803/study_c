@@ -21,3 +21,24 @@
 *	}
 * 지역변수와 매개변수가 스택에 어떠한 순서대로 쌓이고 또 어떠한 순서대로 소멸되는지를 중심으로 설명하면 된다.
 */
+
+// P.542 ReadStringFault1.c
+//#include <stdio.h>
+//char* ReadUserName(void) {
+//	char name[30];
+//	printf("What's your name? ");
+//	gets(name);
+//
+//	return name;
+//}
+//
+//int main(void) {
+//	char* name1;
+//	char* name2;
+//	name1 = ReadUserName();
+//	printf("name1: %s \n", name1);
+//	name2 = ReadUserName();
+//	printf("name2: %s \n", name2);
+//
+//	return 0;
+//}
