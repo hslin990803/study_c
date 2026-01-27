@@ -21,3 +21,10 @@
 //
 //	return 0;
 //}
+
+// P.588 header1.h header2.h main.c
+//#include <stdio.h>
+//
+//int main(void)
+//#include "27_header1.h"
+//#include "27_header2.h"

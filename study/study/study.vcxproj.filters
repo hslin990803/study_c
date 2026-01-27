@@ -108,5 +108,11 @@
     <ClCompile Include="chapter_28.c">
       <Filter>소스 파일\part_4</Filter>
     </ClCompile>
+    <ClCompile Include="27_header1.h">
+      <Filter>소스 파일\part_4</Filter>
+    </ClCompile>
+    <ClCompile Include="27_header2.h">
+      <Filter>소스 파일\part_4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

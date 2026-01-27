@@ -123,6 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="27_header1.h" />
+    <ClCompile Include="27_header2.h" />
     <ClCompile Include="chapter_10.c" />
     <ClCompile Include="chapter_11.c" />
     <ClCompile Include="chapter_12.c" />
