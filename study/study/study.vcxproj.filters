@@ -115,4 +115,9 @@
       <Filter>소스 파일\part_4</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="27_basicArith.h">
+      <Filter>소스 파일\part_4</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
