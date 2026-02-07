@@ -120,6 +120,9 @@
     <ClCompile Include="27_areaArith.c">
       <Filter>소스 파일\part_4</Filter>
     </ClCompile>
+    <ClCompile Include="27_roundArith.c">
+      <Filter>소스 파일\part_4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="27_basicArith.h">
