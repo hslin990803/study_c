@@ -127,7 +127,10 @@
       <Filter>소스 파일\part_4</Filter>
     </ClCompile>
     <ClCompile Include="27_main.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\part_4</Filter>
+    </ClCompile>
+    <ClCompile Include="27_indive.c">
+      <Filter>소스 파일\part_4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
