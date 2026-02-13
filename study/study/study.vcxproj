@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="27_basicArith.h" />
+    <ClInclude Include="27_stdiv.h" />
     <ClInclude Include="areaArith.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
