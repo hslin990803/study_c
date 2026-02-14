@@ -129,6 +129,7 @@
     <ClCompile Include="27_header2.h" />
     <ClCompile Include="27_indive.c" />
     <ClCompile Include="27_indiveMain.c" />
+    <ClCompile Include="27_intdiv2.c" />
     <ClCompile Include="27_main.c" />
     <ClCompile Include="27_roundArith.c" />
     <ClCompile Include="27_roundArith.h" />
