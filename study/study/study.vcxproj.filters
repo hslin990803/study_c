@@ -138,6 +138,9 @@
     <ClCompile Include="27_intdiv2.c">
       <Filter>소스 파일\part_4</Filter>
     </ClCompile>
+    <ClCompile Include="27_stdibMain.c">
+      <Filter>소스 파일\part_4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="27_basicArith.h">
