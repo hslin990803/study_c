@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="27_basicArith.h" />
+    <ClInclude Include="27_intdiv4.h" />
     <ClInclude Include="27_stdiv.h" />
     <ClInclude Include="27_stdiv2.h" />
     <ClInclude Include="areaArith.h" />
