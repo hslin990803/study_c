@@ -17,4 +17,19 @@
 * 저자 : James
 * 제목 : OS for Programming
 * 페이지 수 : 300
+* 
+* 도서 정보 출력
+* book 1
+* 저자 : Yoon
+* 제목 : C Programming
+* 페이지 수 : 200
+* book 2
+* 저자 : Hong
+* 제목 : C++ Programming
+* 페이지 수 : 250
+* book 3
+* 저자 : James
+* 제목 : OS for Programming
+* 페이지 수 : 300
+* 
 */
