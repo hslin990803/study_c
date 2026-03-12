@@ -101,5 +101,14 @@
 * 
 * 실행의 예
 * *****MENU*****
-*
+* 1. Insert
+* 2. Delete
+* 3. Search
+* 4. Print All
+* 5. Exit
+* Choose the item : 1
+* [INSERT]
+* Input Name : Yoon
+* Input Tel Number : 333-4444
+*					Data Inserted
 */
